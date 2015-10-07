@@ -1,0 +1,16 @@
+.date_wrapper {
+    position: relative;
+    margin: auto;
+    text-align: center;
+    border-radius: 5px;
+    width: 50px;
+    border: 1px solid #880000;
+}
+
+.date_wrapper .date_month {
+    background: #880000;
+    color: #FFFFFF;
+}
+.date_wrapper .date_day {
+    font-size: large;
+}
