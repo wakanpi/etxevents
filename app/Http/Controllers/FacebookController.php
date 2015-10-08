@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\User;
+use Illuminate\Support\Facades\Redirect;
 use Laravel\Socialite\Facades\Socialite;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\Controller;
@@ -47,7 +48,7 @@ class FacebookController extends Controller
 
         Auth::login($user);
 
-        return redirect('/dashboard');
+        return Redirect::intended('/dashboard');
 
     }
 

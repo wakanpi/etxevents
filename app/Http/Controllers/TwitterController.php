@@ -10,6 +10,9 @@ use App\User;
 class TwitterController extends Controller
 {
 
+    /**
+     * @return mixed
+     */
     public function redirectToProvider()
     {
         return Socialite::driver('twitter')->redirect();
@@ -47,7 +50,7 @@ class TwitterController extends Controller
 
         Auth::login($user);
 
-        return redirect('/dashboard');
+        return Redirect::intended('/dashboard');
 
     }
 
