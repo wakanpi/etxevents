@@ -1,2 +1,2 @@
-# etxevents
+# ETX Events
 ETX Events Website
